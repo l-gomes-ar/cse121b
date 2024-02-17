@@ -76,7 +76,10 @@ const loadRecipe = (data, label) => {
     const prepare = document.createElement('div');
     prepare.setAttribute('id', 'prepare');
     prepare.innerHTML = `<h5>Prepare</h5>
-                         <a href='${data.recipe.url}' target='_blank'>Instructions</a> <span>on ${data.recipe.source}</span>`;
+                         <div id="prepare-link">
+                           <a href='${data.recipe.url}' target='_blank'>Instructions</a>
+                           <p>on ${data.recipe.source}</p>
+                         </div>`;
 
 
     // Append elements to the grid-container

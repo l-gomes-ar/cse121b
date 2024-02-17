@@ -176,7 +176,7 @@ h2 {
     box-shadow: 6px 5px black;
 }
 
-#grid-container>img {
+#grid-container > img {
     grid-area: img;
     box-shadow: 6px 5px maroon;
 }
@@ -197,7 +197,7 @@ h2 {
     border: none;
 }
 
-#info>h4 {
+#info > h4 {
     font-size: 28pt;
     font-family: 'Courier New', Courier, monospace;
     color: maroon;
@@ -206,7 +206,7 @@ h2 {
 }
 
 #info ul {
-    padding: 0 60px;
+    padding: 0 30px;
 }
 
 #nutrition {
@@ -215,6 +215,16 @@ h2 {
 
 #prepare {
     grid-area: prepare;
+}
+
+#prepare-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+#prepare-link > p {
+    padding: 10px;
 }
 
 #recipe-details button {

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Lucas Gomes Araujo">
+    <meta name="description" content="A web app to find recipes on the internet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+    <title>Recipe Finder</title>
+</head>
+<body>
+    <header id="header">
+        <span>CSE121b</span>
+        <h1>Recipe Finder</h1>
+        <span>by Lucas A.</span>
+    </header>
+    <aside id="searchbar">
+        <div id="search-box">
+            <div>
+                <input type="text" id="ingredient" placeholder="Search by Ingredient / Recipe Name">
+            </div>
+            <div>
+                <select id="cuisineType">
+                    <option value="None" selected disabled>Search by Cuisine Type:</option>
+                    <option value="None" >None selected</option>
+                    <option value="American">American</option>
+                    <option value="Asian">Asian</option>
+                    <option value="British">British</option>
+                    <option value="Caribbean">Caribbean</option>
+                    <option value="Central Europe">Central Europe</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Eastern Europe">Eastern Europe</option>
+                    <option value="French">French</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Kosher">Kosher</option>
+                    <option value="Mediterranean">Mediterranean</option>
+                    <option value="Mexican">Mexican</option>
+                    <option value="Middle Eastern">Middle Eastern</option>
+                    <option value="Nordic">Nordic</option>
+                    <option value="South American">South American</option>
+                    <option value="South East Asian">South East Asian</option>
+                </select>
+            </div>
+            <button id="search" type="submit">Search</button>
+        </div>
+    </aside>
+    <main>
+        <section id="search-results"></section>
+        <section id="recipe-details"></section>
+    </main>
+    <footer>
+        &copy;2024 | Lucas Gomes Araujo | CSE121b | Edaman's Recipe API
+    </footer>
+</body>
+</html>

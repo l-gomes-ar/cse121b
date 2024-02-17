@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+span {
+    font-size: 14pt;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "main"
+    "footer";
+}
+
+header {
+    padding: 15px;
+    color:antiquewhite;
+    grid-area: header;
+    background-color: maroon;
+    text-align: center;
+}
+
+h1 {
+    font-size: 58pt;
+}
+
+header h2 {
+    text-align: end;
+    margin-right: 20px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: maroon;
+    text-align: center;
+}
+
+#search-box {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input, select {
+    color: maroon;
+    border-radius: 5px;
+    border: 1px solid purple;
+    margin: 10px;
+    width: 450px;
+    height: 40px;
+    font-size: 18pt;
+    text-align: center;
+    background-color: antiquewhite;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: maroon;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+button, a {
+    padding: 10px;
+    border: purple;
+    color: white;
+    font-size: 16pt;
+    border-radius: 10px;
+    background-color: purple;
+    text-decoration: none;
+}
+
+button:hover, a:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+main {
+    grid-area: main;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    font-size: 12pt;
+    color: white;
+}
+
+h3, h2 {
+    color: maroon;
+    font-size: 48px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 25px 0;
+    padding: 10px;
+    background-color: rgba(251, 255, 0, 0.6);
+}
+
+#flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#recipe {
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 6px 5px maroon;
+}
+
+#recipe:hover {
+    cursor: pointer;
+    background-color: rgba(88, 44, 7, 0.1);
+    box-shadow: 6px 5px yellow;
+
+}
+
+#recipe > p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14pt;
+}
+
+#recipe img {
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+#recipe h4 {
+    font-size: 20pt;
+    margin: 5px;
+}
+
+#pagination {
+    margin: 15px 0;
+}
+
+#pagination > p {
+    font-size: 20pt;
+    margin: 15px 0;
+}
+
+#next {
+    margin-right: 10px;
+}
+
+/* Design for recipe page */
+#grid-container {
+    text-align: left;
+    font-size: 18pt;
+    margin: 0 auto;
+    padding: 15px 40px 70px;
+    max-width: 1000px;
+    display: grid;
+    gap: 40px;
+    grid-template-areas: 
+    "img info"
+    "nutrition prepare";
+    background-color: antiquewhite;
+    box-shadow: 6px 5px black;
+}
+
+#grid-container>img {
+    grid-area: img;
+    box-shadow: 6px 5px maroon;
+}
+
+#grid-container h5 {
+    font-size: 24pt;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 3px solid maroon;
+    margin-bottom: 20px;
+}
+
+#info {
+    grid-area: info;
+}
+
+#info h5 {
+    margin: 20px 0;
+    border: none;
+}
+
+#info>h4 {
+    font-size: 28pt;
+    font-family: 'Courier New', Courier, monospace;
+    color: maroon;
+    padding: 0 10px 10px;
+    border-bottom: 3px solid maroon;
+}
+
+#info ul {
+    padding: 0 60px;
+}
+
+#nutrition {
+    grid-area: nutrition;
+}
+
+#prepare {
+    grid-area: prepare;
+}
+
+#recipe-details button {
+    margin: 20px 0;
+}

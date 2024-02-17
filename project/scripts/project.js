@@ -126,10 +126,10 @@ const loadRecipes = (data, label) => {
         // create image element
         const img = document.createElement('img');
         img.setAttribute('src', `${recipe.recipe.image}`);
-        img.setAttribute('ref', `${recipe.recipe.label}`);
+        img.setAttribute('alt', `${recipe.recipe.label}`);
         
         // Create h4 element
-        const h4 = document.createElement('h4');
+        const h4 = document.createElement('h3');
         h4.textContent = `${recipe.recipe.label}`;
 
         let info = `<p>Cuisine Type: ${recipe.recipe.cuisineType}</p>

@@ -68,7 +68,7 @@ select:hover {
     cursor: pointer;
 }
 
-button, a {
+button, #prepare a {
     padding: 10px;
     border: purple;
     color: white;
@@ -78,7 +78,7 @@ button, a {
     text-decoration: none;
 }
 
-button:hover, a:hover {
+button:hover, #prepare a:hover {
     background-color: blueviolet;
     cursor: pointer;
 }
@@ -229,4 +229,9 @@ h2 {
 
 #recipe-details button {
     margin: 20px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
 }

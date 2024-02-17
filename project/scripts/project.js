@@ -13,7 +13,6 @@ const getData = async (url, func, label) => {
 
 // Create function to load specific recipe
 const loadRecipe = (data, label) => {
-    console.log(data);
     resultsPage.style.display = 'none';
 
     // Delete previous recipeDetails page, then show it
@@ -98,7 +97,6 @@ let resetSearch;
 
 // Create function to load recipes
 const loadRecipes = (data, label) => {
-    console.log(data);
     // Save first page data to be logged to reset
     if (data.from === 1) {
         resetSearch = data;
